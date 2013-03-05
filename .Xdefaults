@@ -1,0 +1,52 @@
+XLock.mode:          matrix
+XLock.font:          -misc-fixed-*-*-*-*-*-*-*-*-*-*-*-*
+XLock.background:    Black
+XLock.foreground:    Green
+XLock.invalid:       Invalid
+XLock.username:
+XLock.password:
+XLock.info:
+XLock.validate:
+
+! Color themes from ~/.themes/urxvt
+#include "/home/ferus/.themes/urxvt/rezza"
+
+! look & feel
+URxvt.foreground:       #005500
+URxvt.background:       #000000
+URxvt.scrollBar:        False
+!URxvt.font:             xft:DejaVu Sans Mono:size=9
+URxvt.font:             xft:Matrix:size=10:pixelsize=12
+URxvt.transparent:      true
+URxvt.shading:          25
+URxvt.urgentOnBell:     true
+URxvt.cursorUnderline:  true
+URxvt.cursorColor:      #00ff00
+URxvt.underlineColor:   #017991
+
+!perl extensions
+URxvt.perl-ext-common:  default,matcher,vtwheel
+URxvt.urlLauncher:      /usr/bin/firefox
+URxvt.matcher.button:   1
+
+! urxvi settings
+URxvt.keysym.F1:        perl:urxvi
+
+! Enabling Ctrl/Alt + arrow keys for vim
+URxvt.keysym.M-Up:      \033[1;3A
+URxvt.keysym.M-Down:    \033[1;3B
+URxvt.keysym.M-Right:   \033[1;3C
+URxvt.keysym.M-Left:    \033[1;3D
+URxvt.keysym.M-Prior:   \033[5;3~
+URxvt.keysym.M-Next:    \033[6;3~
+URxvt.keysym.M-End:     \033[1;3F
+URxvt.keysym.M-Home:    \033[1;3H
+
+URxvt.keysym.C-Up:      \033[1;5A
+URxvt.keysym.C-Down:    \033[1;5B
+URxvt.keysym.C-Right:   \033[1;5C
+URxvt.keysym.C-Left:    \033[1;5D
+URxvt.keysym.C-Prior:   \033[5;5~
+URxvt.keysym.C-Next:    \033[6;5~
+URxvt.keysym.C-End:     \033[1;5F
+URxvt.keysym.C-Home:    \033[1;5H

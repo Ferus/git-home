@@ -1,0 +1,82 @@
+# Ignore everything
+*
+
+# git
+!.gitconfig
+!.gitignore
+
+# i3
+!.i3/
+!.i3/config
+
+# alsa
+!.asoundrc
+
+# mpd/ncmpcpp/mplayer
+!.mpd/
+!.mpd/mpd.conf
+!.ncmpcpp/
+!.ncmpcpp/config
+!.mplayer/
+!.mplayer/config
+
+# bash
+!.bash_profile
+!.bashrc
+
+# X*/urxvt
+!.xinitrc
+!.Xdefaults
+!.Xresources
+
+# vim
+!.vimrc
+
+# tmux
+!.tmux.conf
+
+# gtk2/urxvt themes
+!.themes/
+!.themes/urxvt/
+!.themes/urxvt/*
+
+# python
+!.pythonrc.py
+
+# newsbeuter
+!.newsbeuter/
+!.newsbeuter/color
+!.newsbeuter/config
+
+# pentadactyl
+!.pentadactyl/
+!.pentadactyl/colors/
+!.pentadactyl/colors/*
+!.pentadactylrc
+
+# binscripts - cbf to update old repo
+!.bin/
+!.bin/coretemp.sh
+!.bin/cosby.sh
+!.bin/jimmies.sh
+!.bin/minecraft_magic.sh
+!.bin/minecraft.sh
+!.bin/notpacman.sh
+!.bin/pack_firefox.sh
+!.bin/pastee.py
+!.bin/pipes.sh
+!.bin/rct.sh
+!.bin/statusinfo.py
+
+# weechat shit
+!.weechat/
+!.weechat/python/
+!.weechat/python/autoload/
+!.weechat/python/autoload/autowhois_on_query.py
+!.weechat/python/autoload/colorize_nicks.py
+!.weechat/python/autoload/shell.py
+!.weechat/python/autoload/weempd.py
+!.weechat/python/autoload/whois_in_active_buffer.py
+!.weechat/python/autoload/urlgrab.py
+!.weechat/python/autoload/weestats.py
+!.weechat/python/autoload/buffer_autoclose.py

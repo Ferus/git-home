@@ -1,0 +1,17 @@
+[user]
+	email = ferus+git@pyboard.net
+	name = Ferus
+[color]
+	diff = auto
+	status = auto
+	branch = auto
+	interactive = auto
+	ui = true
+	pager = true
+[core]
+	editor = vim
+	pager = less
+[alias]
+	crm = rm --cached
+[push]
+	default = current

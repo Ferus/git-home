@@ -1,0 +1,4 @@
+" pentadactyl config
+:colorscheme simple_dark
+:map -builtin -silent <C-Left> :tabprevious<CR>
+:map -builtin -silent <C-Right> :tabnext<CR>

@@ -1,0 +1,8 @@
+include ~/.newsbeuter/color
+auto-reload yes
+browser firefox %u
+bind-key o open-in-browser-and-mark-read
+refresh-on-startup no
+reload-time 60
+reload-threads 2
+show-keymap-hint no

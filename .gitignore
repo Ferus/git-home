@@ -55,18 +55,18 @@
 !.pentadactylrc
 
 # binscripts - cbf to update old repo
-!.bin/
-!.bin/coretemp.sh
-!.bin/cosby.sh
-!.bin/jimmies.sh
-!.bin/minecraft_magic.sh
-!.bin/minecraft.sh
-!.bin/notpacman.sh
-!.bin/pack_firefox.sh
-!.bin/pastee.py
-!.bin/pipes.sh
-!.bin/rct.sh
-!.bin/statusinfo.py
+!bin/
+!bin/coretemp.sh
+!bin/cosby.sh
+!bin/jimmies.sh
+!bin/minecraft_magic.sh
+!bin/minecraft.sh
+!bin/notpacman.sh
+!bin/pack_firefox.sh
+!bin/pastee.py
+!bin/pipes.sh
+!bin/rct.sh
+!bin/statusinfo.py
 
 # weechat shit
 !.weechat/

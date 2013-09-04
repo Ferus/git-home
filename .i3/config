@@ -84,6 +84,10 @@ bindsym $mod+a focus parent
 #bindcode $mod+d focus child
 
 # switch to workspace
+#
+bindsym $mod+F1 workspace irc
+bindsym $mod+F2 workspace web
+bindsym $mod+F3 workspace games
 bindsym $mod+1 workspace 1
 bindsym $mod+2 workspace 2
 bindsym $mod+3 workspace 3
@@ -96,6 +100,9 @@ bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
 # move focused container to workspace
+bindsym $mod+shift+F1 move workspace irc
+bindsym $mod+shift+F2 move workspace web
+bindsym $mod+shift+F3 move workspace games
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
 bindsym $mod+Shift+3 move container to workspace 3
@@ -106,6 +113,27 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+# force workspaces on specific screens
+workspace "irc" output DVI-I-2
+workspace "web" output DVI-I-3
+workspace "games" output DVI-I-3
+
+# window assignments
+assign [window_role="browser"] → web
+assign [title="weechat"] → irc
+assign [title="sshadd"] → irc
+assign [class="killingfloor-bin" instance="killingfloor-bin"] → games
+
+# game specific assignments
+for_window [class="killingfloor-bin" instance="killingfloor-bin"] fullscreen
+
+# keybind to move workspaces around
+bindsym $mod+q move workspace to output right
+
+# screencap
+bindcode --release 107 exec scrot ~/tmp/screenshot.png
+bindcode --release $mod+107 exec scrot -s ~/tmp/screenshot.png
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -179,4 +207,6 @@ new_window 1pixel
 new_float 1pixel
 hide_edge_borders none
 
-exec --no-startup-id urxvt -e ssh-add
+exec --no-startup-id urxvt -title sshadd -e ssh-add
+exec --no-startup-id urxvt -title weechat -e weechat-curses; move workspace irc
+exec firefox

@@ -67,6 +67,7 @@ map tk :tabprevious<CR>
 map tl :tablast<CR>
 map tc :tabclose<CR>
 map tt :tabedit<Space>
+map te :tabedit<Space>
 map tm :tabmove<Space>
 
 

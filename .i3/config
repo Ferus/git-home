@@ -124,6 +124,7 @@ assign [window_role="browser"] → web
 assign [title="weechat"] → irc
 assign [title="sshadd"] → irc
 assign [class="killingfloor-bin" instance="killingfloor-bin"] → games
+assign [class="magic-launcher-MagicLauncher"] → games
 
 # game specific assignments
 for_window [class="killingfloor-bin" instance="killingfloor-bin"] fullscreen

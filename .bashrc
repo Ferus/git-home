@@ -75,6 +75,7 @@ complete -cf sudo
 complete -cf packer
 complete -cf pacman
 complete -cf man
+complete -W "$(echo $(grep '^ssh ' .bash_history | sort -u | sed 's/^ssh //'))" ssh
 
 # env vars
 export PS_FORMAT="user,pid,pcpu,pmem,start,args"

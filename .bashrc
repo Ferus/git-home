@@ -63,13 +63,12 @@ alias sl='ls'
 alias mtr="mtr --curses"
 alias tmux="tmux -u"
 alias man="LESS='' man" # remove less opts from man.
-alias pacman="sudo pacman-color"
 alias ps="ps axf"
 
 alias android-connect="mtpfs -o allow_other /mnt/phone"
 alias android-disconnect="sudo umount /mnt/phone"
 
-alias syslog='sudo journalctl -mbfax --full'
+alias syslog='sudo journalctl --full'
 
 # Tab complete help.
 complete -cf sudo
@@ -84,6 +83,7 @@ export PYTHONSTARTUP="$HOME/.pythonrc.py"
 export EDITOR="vim"
 export LESS="-NR"
 export TERM="xterm-256color"
+export INPUTRC=~/.inputrc
 if [ -d "$HOME/bin" ]; then
 	export PATH="$PATH:$HOME/bin"
 fi

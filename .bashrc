@@ -70,6 +70,12 @@ alias android-disconnect="sudo umount /mnt/phone"
 
 alias syslog='sudo journalctl --full'
 
+# list printers
+alias printers='lpstat -p -d'
+
+# packer security - preview before sourcing
+alias packer='packer --preview'
+
 # Tab complete help.
 complete -cf sudo
 complete -cf packer
